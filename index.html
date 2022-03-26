@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calcBox">
+            <input type="text" placeholder="0" id="displayBox">
+            <input onclick="resetValue()" type="button" value="C">
+            <input onclick="delLast()" type="button" value="DEL">
+            <input onclick="calculate('%')" type="button" value="%">
+            <input onclick="calculate('/')" type="button" value="/">
+            <input onclick="addNumber(7)" type="button" value="7">
+            <input onclick="addNumber(8)" type="button" value="8">
+            <input onclick="addNumber(9)" type="button" value="9">
+            <input onclick="calculate('*')" type="button" value="*">
+            <input onclick="addNumber(4)" type="button" value="4">
+            <input onclick="addNumber(5)" type="button" value="5">
+            <input onclick="addNumber(6)" type="button" value="6">
+            <input onclick="calculate('-')" type="button" value="-">
+            <input onclick="addNumber(1)" type="button" value="1">
+            <input onclick="addNumber(2)" type="button" value="2">
+            <input onclick="addNumber(3)" type="button" value="3">
+            <input onclick="calculate('+')" type="button" value="+">
+            <input onclick="addNumber(0)" type="button" value="0">
+            <input onclick="addNumber('.')" type="button" value=".">
+            <input onclick="Result()" type="button" class="equal" value="=">
+        </div> 
+    </div>
+
+    <div class="sideBox">
+        <button id="btn" type="menu">
+            <div class="iconBox">
+                <img src="images/arrow-down.png" alt="arrow down">
+            </div>
+        </button>
+        <div id="roller" class="box">
+            <p>Created by:<br><br>Michal Drobný</p>
+        </div>
+        
+    </div>
+    
+
+    <script src="calculator.js"></script>
+</body>
+</html>
